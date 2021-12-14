@@ -43,12 +43,15 @@ const App = () => {
 
 const Layout = () => {
   const style = ({ isActive }) => ({
+    color: isActive ? "#010101" : "#616480",
     fontWeight: isActive ? "bold" : "normal",
+    padding: "1rem",
+    textDecoration: "none",
   });
 
   return (
     <>
-      <h1>React Router</h1>
+      <h1>React Nested Routes</h1>
 
       <nav
         style={{
